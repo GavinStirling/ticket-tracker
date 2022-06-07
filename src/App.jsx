@@ -1,10 +1,14 @@
-
 import './App.scss';
+
+import team from './data/employees';
+
+
+console.log(team);
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <h1>Gavin's Ticket Tracker</h1>
     </div>
   );
 }
