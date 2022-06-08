@@ -1,0 +1,30 @@
+@use "../../assets/sass/variables" as *;
+
+.employee-tile {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    box-shadow: 1em 1em $color-shadow;
+
+    &__name {
+        font-size: 1.5em;
+        height: 15%;
+    }
+
+    &__role {
+        height: 15%;
+        font-size: 1em;
+    }
+    
+    &__buttons{
+        display: flex;
+        justify-content: space-evenly;
+
+        button {
+            width: 4em;
+            font-size: 1em;
+        }
+    }
+}
