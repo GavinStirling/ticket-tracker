@@ -13,7 +13,6 @@ const Grid = (props) => {
 
     return (
         <div>
-            <h1>Gavin's Ticket Tracker</h1>
             <div className={className}>{employeeJSX}</div>
         </div>
     );
