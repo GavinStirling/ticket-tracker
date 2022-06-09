@@ -1,6 +1,8 @@
 @use "../../assets/sass/variables" as *;
 
 .employee-tile {
+    height: 17em;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -19,7 +21,11 @@
         font-size: 1em;
     }
 
-    &__buttons {
+    &__tickets {
+        font-size: 0.75em;
+    }
+    
+    &__buttons{
         display: flex;
         justify-content: space-evenly;
 

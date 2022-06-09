@@ -1,19 +1,21 @@
 import React from "react";
 import EmployeeTile from "../EmployeeTile/EmployeeTile";
+import AddEmployee from "../AddEmployee/AddEmployee";
+
 
 import "./Grid.scss";
 
 const Grid = (props) => {
-    const { arr, className } = props;
+    const { className, arr, addEmployee } = props;
 
-    const employeeJSX = arr.map((employee, index) => {
+    const employeeJSX = arr.map((employee) => {
         const { id, name, role } = employee;
-        return <EmployeeTile key={id} name={name} role={role} />;
+        return <EmployeeTile key={id} name={name} role={role} tickets={employee.tickets ? employee.tickets : 0} />;
     });
 
     return (
-        <div>
-            <h1>Gavin's Ticket Tracker</h1>
+        <div className="grid">
+            <AddEmployee employees={arr} addEmployee={addEmployee} />
             <div className={className}>{employeeJSX}</div>
         </div>
     );
