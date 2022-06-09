@@ -8,7 +8,7 @@ const EmployeeTile = (props) => {
 
     const handleDecrease = () => {
       if (ticketCount === 0) {
-        ticketCount = 0;
+        setTicketCount(0);
       }else {
         setTicketCount(ticketCount - 1)
       }
