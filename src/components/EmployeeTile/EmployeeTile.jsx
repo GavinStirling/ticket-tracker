@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import "./EmployeeTile.scss";
 
 const EmployeeTile = (props) => {
-    const [ticketCount, setTicketCount] = useState(0);
-    const {name, role } = props;
+  const {name, role, tickets } = props;
+    const [ticketCount, setTicketCount] = useState(tickets);
 
     const handleDecrease = () => {
       if (ticketCount === 0) {
@@ -25,7 +25,7 @@ const EmployeeTile = (props) => {
             <h2 className="employee-tile__role">{role}</h2>
 
             <div className="employee-tile_counter">
-                <h3>Tickets Completed: </h3>
+                <h3 className="employee-tile__tickets" >Tickets Completed: </h3>
                 <p className="employee-tile__count">{ticketCount}</p>
                 <div className="employee-tile__buttons">
                     <button onClick={handleDecrease}> - </button>

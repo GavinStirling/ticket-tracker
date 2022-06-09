@@ -1,0 +1,34 @@
+@use "../../assets/sass/variables" as *;
+
+// .add-employee__button {
+
+// }
+
+.add-employee__form {
+    height: 15em;
+    width: 10em;
+    margin: 1em 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    box-shadow: 1em 1em $color-shadow;
+    background-color: $color-white;
+    border-radius: 5%;
+
+    &-heading {
+        font-size: 1em;
+        height: 15%;
+    }
+
+    &-input {
+        width: 80%;
+        margin: 0.25em 0;
+    }
+
+    &-submit {
+        width: 60%;
+    }
+}
