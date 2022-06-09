@@ -1,11 +1,10 @@
 @use "../../assets/sass/variables" as *;
 
 .employee-tile {
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
+
     box-shadow: 1em 1em $color-shadow;
     background-color: $color-white;
     border-radius: 5%;
@@ -19,8 +18,8 @@
         height: 15%;
         font-size: 1em;
     }
-    
-    &__buttons{
+
+    &__buttons {
         display: flex;
         justify-content: space-evenly;
 
